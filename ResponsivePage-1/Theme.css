@@ -18,17 +18,29 @@
     color: #878FA4;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .cursor {
     cursor: pointer;
 }
 
-.dp-fl {
+.flex {
     display: flex;
+}
+
+.flex-c {
+    flex-direction: column;
 }
 
 .fr-sb {
     display: flex;
     justify-content: space-between;
+}
+
+.float-r {
+    float: right;
 }
 
 .fs-14 {
@@ -47,12 +59,24 @@
     margin-bottom: 10px;
 }
 
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
 .pd-20 {
     padding: 20px;
 }
 
 .pd-30 {
     padding: 30px;
+}
+
+.pb-5 {
+    padding-bottom: 3px;
 }
 
 .pb-20 {

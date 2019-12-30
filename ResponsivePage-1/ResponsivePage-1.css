@@ -60,11 +60,6 @@
     }
   }
 
-  .header {
-    padding: 15px;
-    background-color: white;
-  }
-
   .left-margin {
       margin-left: 10px;
       margin-top: 3px;
@@ -75,7 +70,6 @@
   }
 
   .graph-box {
-    background-color: white;
     width: 24.5%;
   }
 
@@ -90,7 +84,6 @@
 
   .calendar-box {
     width: 58%;
-    background-color: white;
   }
 
   .box-header {
@@ -117,7 +110,7 @@
     height: 45px;
     width: 45px;
     background-color:rgb(185, 109, 223);
-    margin-bottom: 15px;
+    margin-top: 10px;
   }
 
   .event-status {
@@ -180,30 +173,22 @@
   .month-scroller {
     padding: 30px 50px;
     border-bottom: 1px solid rgb(211, 211, 211);
-    display: flex;
-    justify-content: space-between;
   }
 
   .week-days {
     padding: 18px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .team-conversations-box {
     width: 41%;
-    background-color: white;
   }
 
   .team-users {
     width: 20%;
     padding: 10px 0px;
     border-right: 1px solid rgb(211, 211, 211);
-    display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: space-evenly;
   }
 
   .active-users {
@@ -217,6 +202,7 @@
     width: 45px;
     background-color: #ADE1C5;
     position: relative;
+    margin-top: 5px;
   }
 
   .user-account-status {
@@ -231,8 +217,6 @@
 
   .team-chatbox {
     width: 80%;  
-    display: flex;
-    flex-direction: column;
   }
 
   .team-chatbox-messages {
@@ -247,7 +231,6 @@
   }
 
   .ump2 {
-    background-color: white; 
     padding: 12px; margin-left:40;
     box-shadow: 10px 10px 10px rgb(238, 238, 238);
     border: 1px solid rgb(240, 240, 240);
@@ -271,26 +254,13 @@
     outline: none;
     border: none; 
     background-color: transparent;
-    font-size: 14px;
   }
 
   .body-section2-contents {
     width: 32.6%;
-    background-color: white;
-  }
-
-  .task-body {
-    padding: 10px 20px;
-    flex-direction: column;
-  }
-
-  .task-body-content {
-    height: 20%;
-    width: 95%;
   }
 
  .check-box {
-    cursor: pointer;
     position: relative;
     align-items: center;
   }
@@ -321,13 +291,6 @@
     position: absolute;
     left: 8px;
     top: 17px;
-  }
-
-  .task-name {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px 10px 10px;
-    font-size: 15px;
   }
 
   .check-box > input:checked + .task-name {
