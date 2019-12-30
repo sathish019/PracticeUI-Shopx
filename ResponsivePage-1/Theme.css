@@ -1,0 +1,85 @@
+.white-color {
+    color: #ffffff;
+}
+
+.green-color {
+    color: #35D26B;
+}
+
+.blue-color {
+    color: #286EFA;
+}
+
+.red-color {
+    color: #DF4848;
+}
+
+.faded-color {
+    color: #878FA4;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-c {
+    flex-direction: column;
+}
+
+.fr-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-r {
+    float: right;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-30 {
+    padding: 30px;
+}
+
+.pb-5 {
+    padding-bottom: 3px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+

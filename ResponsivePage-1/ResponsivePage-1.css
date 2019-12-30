@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+
+  body {
+    background-color: #EFF0F8;
+  }
+
+  @media only screen and (max-device-width:768px) {
+    /* For IPad: */
+    .header {
+      width: 100%;
+    }
+
+    .graph-box-layout {
+      flex-wrap: wrap;
+    }
+
+    .graph-box-layout > .graph-box {
+      width: 50%;
+    }
+
+    .body-section1,.body-section2 {
+      flex-wrap: wrap;
+    }
+
+    .body-section1 > .calendar-box, .body-section1 > .team-conversations-box {
+        width: 100%;
+    }
+
+    .body-section2 > .body-section2-contents {
+        width: 100%;
+    }
+  }
+  @media only screen and (max-device-width:375px) {
+    /* For iphone X: */
+    .header {
+      width: 100%;
+    }
+
+    .graph-box-layout {
+      flex-wrap: wrap;
+    }
+
+    .graph-box-layout > .graph-box {
+      width: 100%;
+    }
+
+    .body-section1,.body-section2 {
+      flex-wrap: wrap;
+    }
+
+    .body-section1 > .calendar-box, .body-section1 > .team-conversations-box {
+        width: 100%;
+    }
+
+    .body-section2 > .body-section2-contents {
+        width: 100%;
+    }
+  }
+
+  .left-margin {
+      margin-left: 10px;
+      margin-top: 3px;
+  }
+
+  .graph-box-layout {
+    font-family: 'myriad-arabic', sans-serif;
+  }
+
+  .graph-box {
+    width: 24.5%;
+  }
+
+  .graph-status {
+    background-color: rgb(221, 218, 182);
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .calendar-box {
+    width: 58%;
+  }
+
+  .box-header {
+    margin: 4px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+
+  .event-button {
+    background-color: #286EFA;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;  
+    box-shadow: 5px 5px 10px rgb(222, 220, 255);
+  }
+
+  .upcoming-events {
+    width: 40%;
+  }
+
+  .user-account-image {
+    height: 45px;
+    width: 45px;
+    background-color:rgb(185, 109, 223);
+    margin-top: 10px;
+  }
+
+  .event-status {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #286EFA; 
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 4px; 
+  }
+
+  .event-members {
+    padding: 6px 10px;
+  }
+
+  .emcs {
+    position: relative;
+    margin-right: 40px;
+  }
+  
+  .emc1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(252, 252, 104);
+    border: 1px solid white;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .emc2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(185, 109, 223);
+    border: 1px solid white ;
+    position: absolute;
+    left:12px;
+    z-index:2;
+  }
+  
+  .emc3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(86, 224, 146);
+    border: 1px solid white;
+    position: absolute;
+    left:24px;
+    z-index:1;
+  }
+
+  .calendar-months {
+    width: 58%;
+    height: 420px;
+    border: 1px solid rgb(211, 211, 211);
+  }
+
+  .month-scroller {
+    padding: 30px 50px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+
+  .week-days {
+    padding: 18px 30px;
+  }
+
+  .team-conversations-box {
+    width: 41%;
+  }
+
+  .team-users {
+    width: 20%;
+    padding: 10px 0px;
+    border-right: 1px solid rgb(211, 211, 211);
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .active-users {
+    display: flex;
+    padding-bottom: 16px;;
+  }
+
+  .user-account {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: #ADE1C5;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .user-account-status {
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #286EFA; 
+    position: relative; 
+    z-index:1;
+    transform: translate(-8px,28px);
+  }
+
+  .team-chatbox {
+    width: 80%;  
+  }
+
+  .team-chatbox-messages {
+    height: 90%;
+    width: 100%;
+  }
+
+  .ump1 {
+    margin-top: 30px; 
+    margin-left:30px; 
+    margin-right:30px;
+  }
+
+  .ump2 {
+    padding: 12px; margin-left:40;
+    box-shadow: 10px 10px 10px rgb(238, 238, 238);
+    border: 1px solid rgb(240, 240, 240);
+  }
+
+  .ump3 {
+    justify-content: space-between; 
+    margin-top:10px;
+  }
+
+  .team-chatbox-comments {
+    height: 10%;
+    padding: 0px 20px;
+    align-items: center;
+    border-top: 1px solid rgb(211, 211, 211);
+  }
+
+  .type-message {
+    height: 40px;
+    bottom: 5px;
+    outline: none;
+    border: none; 
+    background-color: transparent;
+  }
+
+  .body-section2-contents {
+    width: 32.6%;
+  }
+
+ .check-box {
+    position: relative;
+    align-items: center;
+  }
+
+  .check-box > input {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+   }
+
+  .check-box > input:checked {
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #286EFA;
+  }
+
+  .check-box > input:checked:before {
+    content: '\2713';
+    display: block;
+    color: white;
+    position: absolute;
+    left: 8px;
+    top: 17px;
+  }
+
+  .check-box > input:checked + .task-name {
+    color: #878FA4;
+    opacity: 0.7; 
+  }
+
+  .task-priority {
+    border-radius: 23%;
+    background-color:rgb(185, 109, 223);
+    font-size: 11px;
+    color: white;
+    padding: 2px 5px;
+  }
