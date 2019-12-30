@@ -1,0 +1,61 @@
+.white-color {
+    color: #ffffff;
+}
+
+.green-color {
+    color: #35D26B;
+}
+
+.blue-color {
+    color: #286EFA;
+}
+
+.red-color {
+    color: #DF4848;
+}
+
+.faded-color {
+    color: #878FA4;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.dp-fl {
+    display: flex;
+}
+
+.fr-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-30 {
+    padding: 30px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
