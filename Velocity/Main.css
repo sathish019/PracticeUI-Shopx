@@ -1,0 +1,250 @@
+* {
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.prime-bg-color {
+    background-color:#E0E7FF;
+}
+
+.icon-color {
+    color: #BFC5D2;
+}
+
+.cust-input {
+    width: 50%;
+    height: 20px;
+    background-color:#E0E7FF;
+    border-style: none;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.cust-button {
+    width: 56%;
+    height: 50px;
+    color:white;
+    background-color:#2E5BFF;
+    border-style: none;
+    border-radius: 4px;
+    padding: 15px;
+    align-items: center;
+}
+
+.filter-button {
+    width: 170px;
+    height: 35px;
+    color:white;
+    background-color:#2E5BFF;
+    border-style: none;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+.cust-menu {
+    padding: 20px;
+    border-left: 4px solid transparent;
+}
+
+.cust-menu:hover {
+    border-left: 4px solid #2E5BFF;
+    padding: 20px;
+    background-color: rgb(232, 238, 255);
+}
+
+.due-label {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(255, 169, 172);
+    align-items: center;
+    color: #E84A50;
+    line-height: 30px;
+    text-align-last: center;
+}
+
+.border-btm {
+    border-bottom: 7px solid #E0E7FF;
+}
+
+.border-btm-line {
+    border-bottom: 2px solid #BFC5D2;
+}
+
+.top-15 {
+    top: 9%;
+}
+
+td {
+    padding: 15px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .cust-input-border {
+    border-radius: 4px; 
+    border: 2px solid #E0E7FF;
+  }
+
+  .cust-pay-label {
+    border-radius: 4px;
+    border: 2px solid #E0E7FF;
+    padding: 15px 30px 15px 30px;
+  }
+
+  .cust-pay-label:hover {
+    background-color: #2E5BFF;  
+    color: white;
+  }
+
+  .cust-prof-label {
+    background-color: #2E5BFF;  
+    color: white;
+    border-radius: 4px;
+    padding: 10px 25px;
+  }
+
+  .cust-integ-label {
+    border-radius: 4px; 
+    border: 2px solid #E0E7FF;
+    padding: 15px;
+  }
+
+  .cust-integ-label:hover {
+    border-color: #2E5BFF;  
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  .switch .cust-toggle-btn { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .cust-toggle-btn:checked + .slider {
+    background-color: #2DB744;
+  }
+  
+  .cust-toggle-btn:focus + .slider {
+    box-shadow: 0 0 1px #2DB744;
+  }
+  
+  .cust-toggle-btn:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .border-left-blue {
+    border-radius: 3px;
+    border-left: 4px solid #2E5BFF;
+  }
+
+  .border-left-green {
+    border-radius: 3px;  
+    border-left: 4px solid #2DB744;
+  }
+
+
