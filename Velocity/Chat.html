@@ -36,15 +36,16 @@
             <div class="w-23 bg-white">
                 <div class="fs-12 pd-20" id="drivers-list"></div>
             </div>
-            <div class="w-55">
+            <div class="w-55 fs-12">
+                <div id="chat-messages"></div>
                 <div class="pd-20 bg-white bottom-0 p-absolute w-49">
-                    <input class="w-95 pd-20 cust-input-border" type="text" name="" id="" placeholder="Type message"></input>
+                    <input class="w-95 pd-20 cust-input-border" type="text" name="" id="enter-btn" placeholder="Type message"></input>
                 </div>
             </div>
             <div class="w-18 bg-white pd-20 fs-12">
-                <div class="cust-prof-label align-font-center pointer mg-t-20p">Mark resolved</div>
+                <div class="cust-prof-label align-font-center pointer">Mark resolved</div>
                 <div class="cust-prof-label align-font-center pointer mg-t-10p">New Conversation</div>
-                <div class="icon-color mg-t-40p">
+                <div class="icon-color mg-t-20p">
                     CLIENT INFO
                 </div>
                 <div class="dp-flex mg-t-10p">
@@ -58,38 +59,57 @@
                     This theme adds additional client and channel information.
                     It's useful for Admins when you need a user's ID without wanting to waste time searching for it.
                 </div>
-                <div class="icon-color mg-t-40p">
+                <div class="icon-color mg-t-20p">
                     INTERACTIONS TIMELINE
                 </div>
                 <div class="mg-t-15p">
-                    <span class="circle-16 bg-blue p-absolute"></span>
-                    <span class="mg-l-20p">Conversation started</span>
+                    <div class="dp-flex-c">
+                        <div class="dp-flex">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="cust-vline"></span>
+                                <span class="fa fa-envelope-o blue-color mg-l-10p mg-t-10p"></span>
+                            </div>
+                            <span class="mg-l-20p mg-t-10p">Conversation started</span>
+                        </div>
+                        <div class="dp-flex mg-t-15p">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="cust-vline"></span>
+                                <span class="fa fa-bolt blue-color mg-l-10p mg-t-10p"></span>
+                            </div>
+                            <span class="mg-l-20p mg-t-10p">Trip #12422</span>
+                        </div>
+                        <div class="dp-flex mg-t-15p">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="cust-vline"></span>
+                                <span class="fa fa-ban blue-color mg-l-10p mg-t-10p"></span>
+                            </div>
+                            <span class="mg-l-20p mg-t-10p">Refund issue #12422</span>
+                        </div>
+                        <div class="dp-flex mg-t-15p">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="cust-vline"></span>
+                                <span class="fa fa-check blue-color mg-l-10p mg-t-10p"></span>
+                            </div>
+                            <span class="mg-l-20p mg-t-10p">Conversation resolved</span>
+                        </div>
+                        <div class="dp-flex mg-t-15p">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="fa fa-envelope-o blue-color mg-l-10p mg-t-10p"></span>
+                            </div>
+                            <span class="mg-l-20p mg-t-10p">Conversation reopened</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="mg-t-15p">
-                    <span class="circle-16 bg-green p-absolute"></span>
-                    <span class="mg-l-20p">Trip #12422</span>
-                </div>
-                <div class="mg-t-15p">
-                    <span class="circle-16 bg-blue p-absolute"></span>
-                    <span class="mg-l-20p">Refund issue #12422</span>
-                </div>
-                <div class="mg-t-15p">
-                    <span class="circle-16 bg-green p-absolute"></span>
-                    <span class="mg-l-20p">Conversation resolved</span>
-                </div>
-                <div class="mg-t-15p">
-                    <span class="circle-16 bg-blue p-absolute"></span>
-                    <span class="mg-l-20p">Conversation reopened</span>
-                </div>
-                <div class="icon-color mg-t-40p">EMAIL</div>
+                <div class="icon-color mg-t-20p">EMAIL</div>
                 <div class="mg-t-5p">invision@invisionapp.com</div>
-                <div class="icon-color mg-t-40p">PHONE</div>
+                <div class="icon-color mg-t-20p">PHONE</div>
                 <div class="mg-t-5p">+144-456-2038</div>
             </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="chat.js"></script>
 </body>
 
 </html>

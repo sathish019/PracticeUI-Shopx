@@ -270,6 +270,10 @@
     margin-right: 5%;
 }
 
+.mg-r-10p {
+    margin-right: 10px;
+}
+
 .mg-r-15p {
     margin-right: 15px;
 }
@@ -298,6 +302,11 @@
 .dp-flex-r {
     display: flex;
     flex-direction: row;
+}
+
+.dp-flex-r-rev {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .dp-flex-sp-bw {

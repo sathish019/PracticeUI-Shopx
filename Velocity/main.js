@@ -111,7 +111,7 @@ $(document).ready(function() {
       id: "#12010",
       vehicle_model: "Tesla Model X",
       next_service: "08/21/2020",
-      trips: "137",
+      trips: "234",
       energy_used: "450kwh",
       action: "Manage"
     },
@@ -120,7 +120,7 @@ $(document).ready(function() {
       id: "#12010",
       vehicle_model: "Tesla Model X",
       next_service: "08/21/2020",
-      trips: "137",
+      trips: "345",
       energy_used: "450kwh",
       action: "Manage"
     },
@@ -129,301 +129,101 @@ $(document).ready(function() {
       id: "#12010",
       vehicle_model: "Tesla Model X",
       next_service: "08/21/2020",
-      trips: "137",
-      energy_used: "450kwh",
-      action: "Manage"
-    },
-    {
-      name: "Spire",
-      id: "#12010",
-      vehicle_model: "Tesla Model X",
-      next_service: "08/21/2020",
-      trips: "137",
-      energy_used: "450kwh",
-      action: "Manage"
-    },
-    {
-      name: "Spire",
-      id: "#12010",
-      vehicle_model: "Tesla Model X",
-      next_service: "08/21/2020",
-      trips: "137",
-      energy_used: "450kwh",
-      action: "Manage"
-    },
-    {
-      name: "Spire",
-      id: "#12010",
-      vehicle_model: "Tesla Model X",
-      next_service: "08/21/2020",
-      trips: "137",
-      energy_used: "450kwh",
-      action: "Manage"
-    },
-    {
-      name: "Spire",
-      id: "#12010",
-      vehicle_model: "Tesla Model X",
-      next_service: "08/21/2020",
-      trips: "137",
+      trips: "567",
       energy_used: "450kwh",
       action: "Manage"
     }
   ];
 
-  $.each(vehiclesDashboard, function(index, value) {
-    $("#vehicles-dashboard").append(
-      '<tr class="align-font-center bg-white border-btm"> <td class="dp-flex align-it-center"><div class="dp-flex-c circle-34 prime-bg-color"></div><div class="dp-flex-c mg-l-10p"><div>' +
-        value.name +
-        '</div><div class="mg-t-5p">' +
-        value.id +
-        "</div></div></td><td>" +
-        value.vehicle_model +
-        "</td><td>" +
-        value.next_service +
-        "</td><td>" +
-        value.trips +
-        "</td><td>" +
-        value.energy_used +
-        '</td><td class="blue-color pointer">' +
-        value.action +
-        "</td></tr>"
-    );
-  });
+  pushVehiclesdashboard(vehiclesDashboard);
 
-  var userActivity = [
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    },
-    {
-      id: "#2178",
-      subject: "Refund request",
-      requested_date: "09/10/2019",
-      latest_update: "08/21/2020",
-      status: "Active",
-      action: "Open"
-    }
-  ];
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
-  $.each(userActivity, function(index, value) {
-    $("#user-activity").append(
-      '<tr class="align-font-center bg-white border-btm"><td>' +
-        value.id +
-        "</td><td>" +
-        value.subject +
-        "</td><td>" +
-        value.requested_date +
-        "</td><td>" +
-        value.latest_update +
-        "</td><td>" +
-        value.status +
-        '</td><td class="blue-color pointer">' +
-        value.action +
-        "</td></tr>"
-    );
-  });
+  // Form that opens the modal
+  var form = document.getElementById("add-vehicle-details");
 
-  var serviceRemainders = {
-    serviceNeeded: [
-      {
-        name: "Spire",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "EOS",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Eagle",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Bebop",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      }
-    ],
-    waiting: [
-      {
-        name: "Expedition",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Bliss",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Vigor",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      }
-    ],
-    inService: [
-      {
-        name: "Scorpion",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Resolve",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      }
-    ],
-    fullyServiced: [
-      {
-        name: "Empire",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "EOS",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Spire",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      },
-      {
-        name: "Nebula",
-        price: "$233",
-        item: "Tire replacement",
-        date: "06/12/2019"
-      }
-    ]
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close-btn")[0];
+
+  // When the user clicks the button, open the modal
+  form.onclick = function() {
+    modal.style.display = "block";
   };
 
-  $.each(serviceRemainders.serviceNeeded, function(index, value) {
-    $("#service-needed").append(
-      '<div class="mg-t-15p pd-20 bg-white pointer border-left-blue"><div class="dp-flex-sp-bw"><div>' +
-        value.name +
-        "</div><div>" +
-        value.price +
-        '</div></div><div class="dp-flex-sp-bw icon-color mg-t-5p"><div>' +
-        value.item +
-        "</div><div>" +
-        value.date +
-        "</div></div></div>"
-    );
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function(event) {
+    console.log(span);
+    if (event.target == span) {
+      modal.style.display = "none";
+      console.log("close opt");
+    }
+    event.stopPropagation();
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      console.log(event.target);
+      modal.style.display = "none";
+      console.log("outside modal");
+    }
+  };
+
+  $("#vehicles-modal-form").submit(function(event) {
+    console.log(vehiclesDashboard);
+    var vehName = $("#vName").val();
+    var vehId = $("#vId").val();
+    var vehModel = $("#vModel").val();
+    var vehDuedate = $("#vDuedate").val();
+    var vehTrips = $("#vTrips").val();
+    var vehEnergy = $("#vEnergy").val();
+    var vehAction = "Manage";
+    vehiclesDashboard.push({
+      name: vehName,
+      id: vehId,
+      vehicle_model: vehModel,
+      next_service: vehDuedate,
+      trips: vehTrips,
+      energy_used: vehEnergy,
+      action: vehAction
+    });
+    pushVehiclesdashboard(vehiclesDashboard);
+    $("#add-vehicle-details").hide();
   });
 
-  $.each(serviceRemainders.waiting, function(index, value) {
-    $("#waiting").append(
-      '<div class="mg-t-15p pd-20 bg-white pointer border-left-green"><div class="dp-flex-sp-bw"><div>' +
-        value.name +
-        "</div><div>" +
-        value.price +
-        '</div></div><div class="dp-flex-sp-bw icon-color mg-t-5p"><div>' +
-        value.item +
-        "</div><div>" +
-        value.date +
-        "</div></div></div>"
-    );
+  $("#slider-range").change(function(event) {
+    pushVehiclesdashboard(vehiclesDashboard);
   });
-
-  $.each(serviceRemainders.inService, function(index, value) {
-    $("#in-service").append(
-      '<div class="mg-t-15p pd-20 bg-white pointer border-left-blue"><div class="dp-flex-sp-bw"><div>' +
-        value.name +
-        "</div><div>" +
-        value.price +
-        '</div></div><div class="dp-flex-sp-bw icon-color mg-t-5p"><div>' +
-        value.item +
-        "</div><div>" +
-        value.date +
-        "</div></div></div>"
-    );
-  });
-
-  $.each(serviceRemainders.fullyServiced, function(index, value) {
-    $("#fully-serviced").append(
-      '<div class="mg-t-15p pd-20 bg-white pointer border-left-green"><div class="dp-flex-sp-bw"><div>' +
-        value.name +
-        "</div><div>" +
-        value.price +
-        '</div></div><div class="dp-flex-sp-bw icon-color mg-t-5p"><div>' +
-        value.item +
-        "</div><div>" +
-        value.date +
-        "</div></div></div>"
-    );
-  });
-
-
-  
 });
+
+var sliderBar = document.getElementById("slider-range");
+
+function pushVehiclesdashboard(vehiclesDashboard) {
+  $("#vehicles-dashboard").html("");
+  $.each(vehiclesDashboard, function(index, value) {
+    var totalTrips = Number(value.trips);
+    if (totalTrips >= sliderBar.value) {
+      $("#vehicles-dashboard").append(
+        '<tr class="align-font-center bg-white border-btm"> <td class="dp-flex align-it-center"><div class="dp-flex-c circle-34 prime-bg-color"></div><div class="dp-flex-c mg-l-10p"><div>' +
+          value.name +
+          '</div><div class="mg-t-5p">' +
+          value.id +
+          "</div></div></td><td>" +
+          value.vehicle_model +
+          "</td><td>" +
+          value.next_service +
+          "</td><td>" +
+          value.trips +
+          "</td><td>" +
+          value.energy_used +
+          '</td><td class="blue-color pointer">' +
+          value.action +
+          "</td></tr>"
+      );
+    }
+  });
+}
 
 function myMap() {
   var mapProp = {
@@ -432,3 +232,12 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+/* var sliderBar = document.getElementById("myRange");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  console.log();
+}; */

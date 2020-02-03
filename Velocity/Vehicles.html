@@ -63,8 +63,14 @@
                     <div class="mg-l-5 mg-t-20p">
                         Trips taken
                     </div>
+                    <div class="mg-l-5 mg-t-10p w-80 p-relative">
+                        <input type="range" min="1" max="1000" value="50" class="slider-bar" id="slider-range">
+                    </div>
                     <div class="mg-l-5 mg-t-10p">
                         Service due
+                    </div>
+                    <div class="mg-l-5 mg-t-10p w-80 p-relative">
+                        <input type="range" min="1" max="100" value="50" class="slider-bar" id="myRange">
                     </div>
                     <div class="mg-l-5 mg-t-10p">
                         Vehicle model
@@ -80,7 +86,27 @@
                     <input class="mg-l-5 mg-t-5p w-80 pd-10 cust-input-border" type="text" placeholder="USA"></input>
                 </div>
                 <div class="circle-48 bg-blue mg-l-250p mg-t-270p">
-                    <span class="fa fa-plus white-color pointer pl-15 pt-15"></span>
+                    <div id="add-vehicle-details" class="fa fa-plus white-color pointer pl-15 pt-15">
+                        <div id="myModal" class="modal">
+                            <form class="modal-content fs-12" id="vehicles-modal-form" action="#">
+                              <span class="close-btn">&times;</span>
+                              <p class="black-color fs-15">Enter the Vehicle details..</p>
+                                <div class="mg-t-20p black-color">Vehicle Name</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vName" placeholder="Vehicle name"></input>
+                                <div class="mg-t-20p black-color">Vehicle ID</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vId" placeholder="#12020"></input>
+                                <div class="mg-t-20p black-color">Vehicle Model</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vModel" placeholder="Vehicle model"></input>
+                                <div class="mg-t-20p black-color">Next Service</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vDuedate" placeholder="04/10/2020"></input>
+                                <div class="mg-t-20p black-color">Trips</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vTrips" placeholder="234"></input>
+                                <div class="mg-t-20p black-color">Energy Used</div>
+                                <input class="mg-t-5p w-95 pd-10 cust-input-border" type="text" id="vEnergy" placeholder="567kwh"></input>
+                                <input class="mg-t-20p right-0 cust-prof-label pointer" type="submit" >Submit</input>
+                            </form>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
