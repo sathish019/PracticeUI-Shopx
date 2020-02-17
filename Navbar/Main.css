@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+.custom-search {
+    height: 20px;
+    outline: none;
+    border: none; 
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.custom-label1 {
+    background-color: lavenderblush;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.custom-label2 {
+    background-color: lavenderblush;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pd-10 {
+    padding:10px;
+  }
+  
+  .mg-10 {
+    margin-top:10px;
+    margin-left:10px;
+  }
+  
+  .label {
+    background-color:limegreen;
+    border-radius:6px;
+  } 

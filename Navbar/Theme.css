@@ -1,0 +1,56 @@
+.pointer {
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+
+
+.w-5 {
+    width: 5%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.mg-l-10p {
+    margin-left: 10px;
+}
+
+.mg-t-10p {
+    margin-top: 10px;
+}
+
+.dp-block {
+    display: block;
+}
+
+.dp-inblock {
+    display: inline;
+}
+
+.dp-flex {
+    display: flex;
+}
+
+.dp-flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.dp-flex-r {
+    display: flex;
+    flex-direction: row;
+}
