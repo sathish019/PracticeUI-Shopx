@@ -319,8 +319,6 @@ td {
   }
 
   .triangle-left {
-    width: 0;
-    height: 0;
     transform: translate(0px,8px);
     border-top: 12px solid transparent;
     border-right: 30px solid white;
@@ -328,8 +326,6 @@ td {
   }
 
   .triangle-right {
-    width: 0;
-    height: 0;
     transform: translate(0px,8px);
     border-top: 12px solid transparent;
     border-left: 30px solid white;

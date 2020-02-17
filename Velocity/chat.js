@@ -1,3 +1,40 @@
+$(document).ready(function() {
+  var activeUserslist = [
+    {
+      driverName: "Bebon",
+      time: "2m",
+      text: "If you're still having trouble.."
+    },
+    {
+      driverName: "Bebon",
+      time: "1h",
+      text: "Let's look into this together."
+    },
+    {
+      driverName: "Bebon",
+      time: "13m",
+      text: "If you're still having trouble.."
+    },
+    {
+      driverName: "Bebon",
+      time: "2h",
+      text: "You're welcome !!"
+    }
+  ];
+
+  $.each(activeUserslist, function(index, value) {
+    $("#active-users-list").append(
+      '<div class="dp-flex pd-10"> <div class="circle-48 prime-bg-color p-relative"><div class="circle-16 bg-blue p-absolute right-0"></div></div> <div class="dp-flex-c mg-l-10p w-80 mg-t-5p"><div class="dp-flex-sp-bw"><span>' +
+        value.driverName +
+        '</span><span class="icon-color">' +
+        value.time +
+        '</span></div> <div class="dp-flex-sp-bw"> <span class="icon-color">' +
+        value.text +
+        "</span></div></div> </div>"
+    );
+  });
+});
+
 var chats = {
   first: "Hello, Welcome to Velocity",
   second: "How may I help you ?",
